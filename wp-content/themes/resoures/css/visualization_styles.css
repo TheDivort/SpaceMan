@@ -1,0 +1,412 @@
+
+circle {
+  fill: #04CCFF;
+}
+
+circle {
+  fill: #04CCFF;
+}
+
+.country {
+  stroke: #000;
+  stroke-width: 0.1px;
+}
+
+.text {
+  font-size:10px;
+  text-transform: capitalize;
+}
+
+#container {
+  height: 100%;
+  width: auto;
+  position: relative;
+  margin-right:270px;
+}
+#sidebar {
+  float: right;
+  width:250px;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#sliderContainer {
+  height: 60px;
+}
+
+#map {
+  border: 2px solid #0A080D;
+  box-shadow: 0 0 12px #000;
+  overflow: hidden;
+}
+
+.hidden { 
+  display: none; 
+}
+
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+  z-index: 333;
+}
+
+.launch_success {
+  fill: #4CFF3F;
+}
+
+.launch_failure {
+  fill: #FF2A46;
+}
+
+#date_selectors {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+#start_date_selector {
+  width: 49%;
+  float: left;
+  text-align: right;
+}
+
+#end_date_selector {
+  width: 49%;
+  float: left;
+}
+
+#start_date, #end_date {
+  text-decoration: underline;
+}
+
+#start_date {
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+#end_date {
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+.datepicker {
+  z-index: 200;
+}
+
+#playControls {
+  height: 30px;
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+
+#playButton {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  line-height: 30px;
+  height: 30px;
+  width: 80px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* Standard syntax */
+  box-shadow: none;
+  color: black;
+}
+
+#playButton:hover {
+  color: white;
+}
+
+#hideButton {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  line-height: 30px;
+  height: 30px;
+  width: 160px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* Standard syntax */
+  box-shadow: none;
+  color: black;
+}
+
+#hideButton:hover {
+  color: white;
+}
+
+/* Speed picker */
+.toggle_radio{
+  display: inline-block;
+  position: relative;
+  background: rgba(255,255,255,.1);
+  overflow: hidden;
+  padding: 0 !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  height: 30px;
+  width: 258px;
+  box-shadow: inset 0 0 10px #000;
+}
+.toggle_radio > * {
+  float: left;
+}
+.toggle_radio input[type=radio]{
+  display: none;
+  /*position: fixed;*/
+}
+.toggle_radio label{
+  color: rgba(255,255,255,.9);
+  z-index: 0;
+  display: block;
+  width: 80px;
+  height: 24px;
+  margin: 3px 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  /*background: rgba(0,0,0,.1);*/
+  text-align: center;
+  /*background: blue;*/ /*make it blue*/
+}
+
+.toggle_radio p {
+  margin: 0px;
+}
+.toggle_option_slider{
+  /*display: none;*/
+  width: 80px;
+  height: 24px;
+  position: absolute;
+  top: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#slow:checked ~ .toggle_option_slider{
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+  left: 3px;
+}
+
+#medium:checked ~ .toggle_option_slider{
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+  left: 89px;
+}
+
+#fast:checked ~ .toggle_option_slider{
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+  left: 175px;
+}
+
+#key {
+  vertical-align: top;
+  line-height: 30px;
+  float: right;
+}
+
+#key, #key div {
+  display: inline-block;
+}
+
+#green, #red {
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  margin-left: 12px;
+  margin-right: 2px;
+}
+
+#red {
+  background: red;
+}
+
+#green {
+  background: green;
+}
+
+#filters {
+  background: rgba(36, 36, 36, 0.75);
+  margin-left: 8px;
+}
+
+#filters h3 {
+  padding: 5px;
+  margin: 0px;
+
+}
+
+#filter_tag_list {
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;  
+    padding: 3px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #222, 0 -1px #333 inset;
+    -moz-box-shadow: 0 3px 0 #222, 0 -1px #333 inset;
+    box-shadow: 0 3px 0 #222, 0 -1px #333 inset;
+    background: rgba(11, 11, 11, 0.75);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance:none;
+    cursor: pointer;  
+}
+
+#filters input {
+  margin-right: 5px;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.description a, .description a:link, .description a:visited {
+  color: #CCC;
+}
+
+.description a:hover, .description a:active {
+  color: #888;
+}
+
+#start_date:hover, #end_date:hover {
+  color: #DDD;
+  cursor: pointer;
+}
+
+#launchInfoBox{
+  width: 260px;
+	height: auto;
+  border: solid 1px;
+  border-color: rgba(33, 33, 33, 0.75);
+	opacity: 1.0;
+	overflow: auto;
+	z-index: 20;
+	right: -8px;
+	background: rgba(11, 11, 11, 0.75);
+	overflow: hidden;
+  position: relative;
+  bottom: 6px;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+
+#launchInfoBox h3{
+  margin: 0;
+}
+
+#title_bar{
+  height: 24px;
+  width: auto;
+  opacity: 1.0;
+	font-size: 16px;
+	font-family:  'Titillium Web', sans-serif;
+	cursor: pointer;
+  margin-bottom: 6px;
+}
+
+#launchInfoBox h3 {
+	text-align: center;
+	margin: 3;
+	float: bottom;
+}
+
+#launchInfoBoxAndScrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#launchInfoBoxAndScrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #959595;
+}
+
+#launchInfoBoxAndScrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+#launchInfoBoxAndScrollbar{
+	font-size: 12px;
+	font-family:  'Titillium Web', sans-serif;
+	margin-left: 16px;
+  padding: 0 8px;
+}
+
+#clearButton {
+  font-size: 14px;
+  display: inline-block;
+  font-family:  'Titillium Web', sans-serif;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 20px;
+  height: 20px;
+  width: 60px;
+  margin-right: 28px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,.8), rgba(100,100,100,.7)); /* Standard syntax */
+  box-shadow: none;
+  color: black;
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}
+
+#clearButton:hover {
+  color: white;
+}
+
+.scrollbar
+{
+	margin-left: 10px;
+	float: left;
+  height: 300px;
+	width: 230px;
+	background: rgba(30, 30, 30, 0.75);
+	overflow-y: scroll;
+	margin-bottom: 30px;
+  height: 497px;
+}
